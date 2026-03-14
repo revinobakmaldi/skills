@@ -1,0 +1,12 @@
+{
+  "name": "minimax-research",
+  "version": "1.0.0",
+  "description": "Fast parallel web research using Minimax M2.5 with real-time web search.",
+  "author": {
+    "name": "Revino Bakmaldi",
+    "url": "https://github.com/revinobakmaldi"
+  },
+  "repository": "https://github.com/revinobakmaldi/skills",
+  "license": "MIT",
+  "keywords": ["research", "web-search", "minimax"]
+}

@@ -4,15 +4,21 @@ Claude Code skills by Revino Bakmaldi.
 
 ## Install
 
-In Claude Code, run `/plugin` and enter:
+Add as a marketplace in Claude Code:
 
 ```
-https://github.com/revinobakmaldi/skills.git
+/plugin marketplace add revinobakmaldi/skills
 ```
 
-## Skills
+Then install:
 
-### minimax-research
+```
+/plugin install minimax-research@revinobakmaldi-skills
+```
+
+---
+
+## minimax-research
 
 Fast parallel web research using Minimax M2.5 with real-time web search.
 
@@ -20,12 +26,11 @@ Fast parallel web research using Minimax M2.5 with real-time web search.
 - Reuses a single MCP subprocess per session
 - Typical response time: 10-20s
 
-**Requirements:**
-- `pip install httpx`
-- `uvx` available (`pip install uv`)
-- `MINIMAX_API_KEY` set as an environment variable
-- The `minimax-research` script installed to `~/.local/bin/`:
-  ```bash
-  cp skills/minimax-research/minimax-research.py ~/.local/bin/minimax-research
-  chmod +x ~/.local/bin/minimax-research
-  ```
+**Requirements before installing:**
+1. `pip install httpx uv`
+2. Set `MINIMAX_API_KEY` as an environment variable
+3. Copy the script to your local bin:
+   ```bash
+   cp skills/minimax-research/minimax-research.py ~/.local/bin/minimax-research
+   chmod +x ~/.local/bin/minimax-research
+   ```
